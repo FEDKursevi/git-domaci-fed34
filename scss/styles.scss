@@ -1,0 +1,70 @@
+@import "./components/vars";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  .topbar {
+    padding: 15px;
+    background-color: $color-main;
+    color: white;
+    a {
+      margin-left: 10px;
+      text-decoration: underline;
+    }
+  }
+  nav {
+    background-color: $color-secondary;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 15px 0;
+      li {
+        padding: 15px;
+        text-align: center;
+        min-width: 100%;
+        color: white;
+      }
+    }
+  }
+}
+.banner-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .banner {
+    background-image: url("../slike/intro.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+  }
+  .banner-text {
+    position: relative;
+    z-index: 5;
+    color: white;
+    background-color: black;
+    padding: 5px 30px 30px;
+    min-width: 100%;
+    * {
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  }
+}
