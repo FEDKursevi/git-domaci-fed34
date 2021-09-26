@@ -52,7 +52,8 @@ header {
       text-align: center;
     }
     h1 {
-      font-size: $fs-xxl;
+      font-size: $fs-xxl; // TODO
+      font-weight: 500; // TODO
     }
     p {
       font-size: $fs-lg;
@@ -68,7 +69,30 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     li {
-      @include gray-button();
+      @include gray-button($base-padding / 2);
+    }
+  }
+}
+.cards-section {
+  background-color: $color-background-secondary;
+  padding: $base-padding * 3 $base-padding;
+  .cards-section__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    .cards-section__card {
+      position: relative;
+      max-height: 200px;
+      overflow: hidden;
+      .cards-section__card__overlay {
+        position: absolute;
+        padding: $base-padding;
+        padding-bottom: $base-padding * 3;
+        background-color: rgba($color-background, 0.7);
+        top: 0;
+        left: 0;
+        right: 0;
+      }
     }
   }
 }
