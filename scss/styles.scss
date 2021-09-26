@@ -96,3 +96,21 @@ header {
     }
   }
 }
+.pricing-section {
+  padding: $base-padding * 2;
+  text-align: center;
+  * {
+    margin: 5px 0;
+  }
+  h3 {
+    text-transform: uppercase;
+    color: $color-text-dark;
+    font-size: $fs-xl;
+  }
+  p {
+    color: $color-gray;
+  }
+  button {
+    @include gray-button($base-padding);
+  }
+}

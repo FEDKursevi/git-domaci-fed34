@@ -1,5 +1,6 @@
 @mixin gray-button($padding) {
   & {
+    display: inline-block;
     padding: $padding; // TODO
     border-radius: 100px;
     border: 1px solid rgb(160, 160, 160);
