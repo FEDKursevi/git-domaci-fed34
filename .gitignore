@@ -1,0 +1,8 @@
+# Sa githib-a
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# css folder
+css/
