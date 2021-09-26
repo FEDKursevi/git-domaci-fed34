@@ -1,7 +1,6 @@
-@import url(partials/_mixins.scss);
-@import url(partials/_variables.scss);
+@import 'partials/mixins';
+@import 'partials/variables';
 
-$navFirstCol: #f75311;
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -14,7 +13,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: $headerFooterCol;
     position: relative;
   }
   
@@ -67,4 +66,15 @@ ul {
         margin-top: 0%;
         margin-bottom: 1%;
     }
+  }
+
+  footer {
+      margin: 0;
+      padding: 1% 0 0 0;
+      text-align: center;
+      background-color: $headerFooterCol;
+      color: white;
+      span {
+          color: $navFirstCol;
+      }
   }
