@@ -10,6 +10,9 @@ body {
   background-color: $color-background;
   font-family: $main-font;
 }
+textarea {
+  font-family: $main-font;
+}
 a {
   color: inherit;
   text-decoration: none;

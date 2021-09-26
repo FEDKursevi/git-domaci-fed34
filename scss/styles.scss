@@ -137,20 +137,36 @@ header {
     }
   }
   .contact-section__form-wrapper {
-    padding: $base-padding * 2;
-    background-color: $color-main;
+    form {
+      padding: $base-padding * 2;
+      background-color: $color-main;
+    }
     .form-group {
       margin-bottom: 30px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
       input,
       select,
       textarea {
+        border: none;
         min-width: 100%;
-        padding: ($base-padding / 3) ($base-padding / 2);
+        padding: ($base-padding / 2) $base-padding;
+        &:focus {
+          outline-color: $color-secondary;
+        }
       }
       textarea {
         max-width: 100%;
         min-height: 100px;
         max-height: 150px;
+      }
+    }
+    .form-grid {
+      display: flex;
+      flex-wrap: wrap;
+      .form-group {
+        width: 100%;
       }
     }
   }
@@ -198,7 +214,9 @@ footer {
     max-width: $max-content-width;
     ul {
       justify-content: flex-end;
+
       li {
+        padding: $base-padding;
         margin-left: 30px;
       }
     }
@@ -273,6 +291,19 @@ footer {
     }
     .contact-section__map-wrapper {
       width: 50%;
+    }
+    .contact-section__form-wrapper {
+      .form-grid {
+        gap: 30px;
+        flex-wrap: nowrap;
+        .form-group {
+          width: calc(100% - 100px);
+
+          &:first-child {
+            width: 100px;
+          }
+        }
+      }
     }
   }
 }
