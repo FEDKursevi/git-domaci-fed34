@@ -269,10 +269,59 @@ footer {
       text-align: center;
       text-transform: uppercase;
       font-size: $fs-xl;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     }
     .contact-section__map-wrapper {
       width: 50%;
+    }
+  }
+}
+
+@include desktop() {
+  header {
+    .topbar {
+      min-width: 300px;
+    }
+  }
+  .banner-section {
+    min-height: 700px;
+    .banner-text {
+      position: absolute;
+      bottom: 100px;
+    }
+  }
+  .cards-section {
+    .cards-section__grid {
+      display: flex;
+      flex-wrap: wrap;
+
+      .cards-section__card {
+        max-height: unset;
+        aspect-ratio: unset;
+      }
+    }
+  }
+  .pricing-section {
+    table {
+      width: auto;
+      max-width: 900px;
+      margin: $margin-center;
+    }
+  }
+  .contact-section {
+    h3 {
+      margin-bottom: 60px;
+    }
+    .contact-section__content {
+      display: flex;
+      gap: 60px;
+    }
+
+    .contact-section__map-wrapper {
+      width: 40%;
+    }
+    .contact-section__form-wrapper {
+      width: 60%;
     }
   }
 }
