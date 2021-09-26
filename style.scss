@@ -1,0 +1,70 @@
+@import url(partials/_mixins.scss);
+@import url(partials/_variables.scss);
+
+$navFirstCol: #f75311;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  li {
+    padding: 0% 3%;  
+    float: left;
+        img {
+            width: 3%;
+            position: absolute;
+            left: 1%;
+            top: 15%;
+        }
+        a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;  
+    }
+  }
+  .firstNav {
+      background-color: $navFirstCol;
+      width: 25%;
+      a{
+          text-align: inherit;
+          text-decoration: underline;
+      }
+  }
+        
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    img {
+        width: 100%;
+    }
+  }
+
+  .introTxt {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    background-color: darken($color: #5c5b5b98, $amount: 10);
+    padding: 0 10%;
+    h1 {
+        margin-bottom: 0%;
+        margin-top: 1%;
+    }
+    p {
+        margin-top: 0%;
+        margin-bottom: 1%;
+    }
+  }
