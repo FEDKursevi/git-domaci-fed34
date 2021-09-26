@@ -7,3 +7,8 @@
     color: rgb(160, 160, 160);
   }
 }
+@mixin section-padding() {
+  & {
+    padding: $base-padding * 3 $base-padding;
+  }
+}

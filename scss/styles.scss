@@ -75,7 +75,7 @@ header {
 }
 .cards-section {
   background-color: $color-background-secondary;
-  padding: $base-padding * 3 $base-padding;
+  @include section-padding();
   .cards-section__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -112,5 +112,43 @@ header {
   }
   button {
     @include gray-button($base-padding);
+  }
+}
+.contact-section {
+  @include section-padding();
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $fs-xl;
+    margin-bottom: 15px;
+  }
+  .contact-section__map-wrapper {
+    margin: $margin-center;
+    margin-bottom: 30px;
+    width: 80%;
+    iframe {
+      border: none;
+      min-width: 100%;
+      height: auto;
+      aspect-ratio: 3 / 2;
+    }
+  }
+  .contact-section__form-wrapper {
+    padding: $base-padding * 2;
+    background-color: $color-main;
+    .form-group {
+      margin-bottom: 30px;
+      input,
+      select,
+      textarea {
+        min-width: 100%;
+        padding: ($base-padding / 3) ($base-padding / 2);
+      }
+      textarea {
+        max-width: 100%;
+        min-height: 100px;
+        max-height: 150px;
+      }
+    }
   }
 }
