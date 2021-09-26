@@ -3,9 +3,13 @@
 
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontFam;
     width: 100%;
     margin: auto;
+}
+
+main {
+    color: $fontCol;
 }
 
 ul {
@@ -67,6 +71,54 @@ ul {
         margin-bottom: 1%;
     }
   }
+
+  .firstBtn{
+      position: relative;
+      div {
+          position: relative;
+          left: 50%;
+          margin: 2% 2%;
+          padding: 0.7% 2%;
+          display: inline-block;
+          border: rgb(212, 210, 210) solid 1px;
+          border-radius: 20px;
+          &:hover {
+                background-color: $btnHover;
+                a {
+                    color: white;
+                }
+             }
+          a {
+              text-decoration: none;
+              color: $fontCol;
+              }
+          }
+      }
+
+    .secondPic {
+        
+        padding-top: 3%;
+        width: 100%;
+        background-color: $bkgCol;
+        
+        .photosHouse {
+            width: 80%;
+            margin: auto;
+
+            img {
+                width: 20%;
+                margin: 0 1.5%;
+                padding-bottom: 3%;
+            }
+            .lastPic {
+                height: 287px;
+                object-fit: cover;
+            }
+        }
+        
+    }
+  
+      
 
   footer {
       margin: 0;
