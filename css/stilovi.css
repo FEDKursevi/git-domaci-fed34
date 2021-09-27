@@ -176,5 +176,37 @@ body .pricing table .price {
 body .pricing table .price {
   border: 1px solid #f75311;
 }
+body .contactForm {
+  padding: 2em 0 4em 0;
+}
+body .contactForm .contact {
+  width: 80%;
+  text-align: center;
+  padding: 2em 0 6em 0;
+  margin: 0 auto;
+}
+body .contactForm .contact img {
+  display: inline-block;
+}
+body .contactForm .contact h3 {
+  color: black;
+  font-size: 2em;
+}
+body .contactForm .contact table {
+  float: right;
+  width: 66%;
+  margin: 0 auto;
+  padding: 0;
+  border-spacing: 2em;
+  background-color: #f75311;
+}
+body .contactForm .contact table input,
+body .contactForm .contact table select {
+  height: 2em;
+  width: 100%;
+}
+body .contactForm .contact table textarea {
+  width: 100%;
+}
 
 /*# sourceMappingURL=stilovi.css.map */
