@@ -47,6 +47,9 @@ header nav ul li a {
   color: white;
   padding: 0 1em;
 }
+header nav a:hover {
+  text-decoration: underline;
+}
 header .container {
   position: relative;
   text-align: center;
@@ -94,13 +97,48 @@ body section ul {
   padding: 1em 9em;
 }
 body section ul li:hover a {
-  border: 1px solid #f75311;
+  color: white;
+  background-color: #cfd1d3;
 }
 body section ul li a {
   color: #797979;
   border: 1px solid #cfd1d3;
   border-radius: 2em;
   padding: 1em 2em;
+}
+body .apartments .slika .cena, body .apartments .slika .naziv {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s ease-out;
+  color: black;
+  position: absolute;
+}
+body .apartments {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em 0 4em 0;
+}
+body .apartments .slika {
+  position: relative;
+  display: inline-block;
+  height: 360px;
+  overflow: hidden;
+  padding: 2em 1em;
+}
+body .apartments .slika:hover .naziv, body .apartments .slika:hover .cena {
+  visibility: visible;
+  opacity: 1;
+}
+body .apartments .slika .naziv {
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 1em;
+  left: 1em;
+  padding: 1em 11em 6em 1em;
+}
+body .apartments .slika .cena {
+  position: absolute;
+  top: 4em;
+  left: 2em;
 }
 
 /*# sourceMappingURL=stilovi.css.map */

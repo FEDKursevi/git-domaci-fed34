@@ -38,6 +38,10 @@ header {
         background-color: $back;
         @include ul_all;
 
+        a:hover {
+            text-decoration: underline;
+        }
+
     }
 
     .container {
@@ -72,8 +76,9 @@ header {
 }
 
 body {
+
     section:nth-child(odd) {
-        background-color: #f3f7f9;
+        background-color: $sectionBack;
     }
 
     section {
@@ -85,7 +90,8 @@ body {
 
             li {
                 &:hover a {
-                    border: 1px solid $scream;
+                    color: $white;
+                    background-color: $hover;
                 }
 
                 a {
@@ -97,4 +103,43 @@ body {
             }
         }
     }
+
+    @include priceTag;
+
+    .apartments {
+        width: 80%;
+        margin: 0 auto;
+        padding: 2em 0 4em 0;
+
+        .slika {
+            position: relative;
+            display: inline-block;
+            height: 360px;
+            overflow: hidden;
+            padding: 2em 1em;
+
+            &:hover .naziv,
+            &:hover .cena {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .naziv {
+                @extend %priceTag;
+                background-color: rgba($color: #fff, $alpha: 0.6);
+                top: 1em;
+                left: 1em;
+                padding: 1em 11em 6em 1em;
+            }
+
+            .cena {
+                @extend %priceTag;
+                position: absolute;
+                top: 4em;
+                left: 2em;
+            }
+        }
+    }
+
+    .pricing {}
 }

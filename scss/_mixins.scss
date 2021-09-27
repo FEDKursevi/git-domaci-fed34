@@ -29,3 +29,15 @@
         }
     }
 }
+
+@mixin priceTag {
+
+    %priceTag {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.2s ease-out;
+        color: black;
+        position: absolute;
+    }
+
+}
