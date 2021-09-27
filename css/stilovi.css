@@ -142,14 +142,15 @@ body .apartments .slika .cena {
 }
 body .pricing {
   text-align: center;
+  padding: 2em 0 6em 0;
 }
 body .pricing h3 {
   color: black;
+  font-size: 2em;
 }
 body .pricing table {
   margin: 0 auto;
-  border-collapse: separate;
-  empty-cells: hide;
+  border-collapse: collapse;
   border: 0;
   border-spacing: 0;
 }
@@ -163,10 +164,17 @@ body .pricing table td {
   padding: 0.5em 4em;
   border: 1px solid #797979;
 }
+body .pricing table .hidden {
+  visibility: hidden;
+  border: 0;
+}
 body .pricing table .location,
 body .pricing table .price {
   background-color: #f75311;
   color: white;
+}
+body .pricing table .price {
+  border: 1px solid #f75311;
 }
 
 /*# sourceMappingURL=stilovi.css.map */

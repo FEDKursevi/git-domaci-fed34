@@ -143,15 +143,16 @@ body {
 
     .pricing {
         text-align: center;
+        padding: 2em 0 6em 0;
 
         h3 {
             color: black;
+            font-size: 2em;
         }
 
         table {
             margin: 0 auto;
-            border-collapse: separate;
-            empty-cells: hide;
+            border-collapse: collapse;
             border: 0;
             border-spacing: 0;
 
@@ -168,10 +169,19 @@ body {
                 border: 1px solid $texts;
             }
 
+            .hidden {
+                visibility: hidden;
+                border: 0;
+            }
+
             .location,
             .price {
                 background-color: $scream;
                 color: $white;
+            }
+
+            .price {
+                border: 1px solid $scream;
             }
         }
     }
