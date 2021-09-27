@@ -11,9 +11,10 @@ $mainFont: 'Roboto', sans-serif;
 // BREAKPOINTS
 
 $breakpoints: (
-  'small': 767px,
-  'medium': 992px,
-  'large': 1200px,
+  'small': 578px,
+  'tablet': 992px,
+  'medium': 1148px,
+  'large': 1860px,
 ) !default;
 
 /// Mixin to manage responsive breakpoints
@@ -72,9 +73,14 @@ $breakpoints: (
   background: transparent;
   border: 1px solid $hoverBtnColor;
   padding: 0.5em 1em;
-  @include border-radius(15px);
+  @include border-radius(1em);
   color: $mainFontColor;
   cursor: pointer;
+  @include respond-to('small') {
+    font-size: 1.6rem;
+    padding: 1.5rem 3rem;
+    @include border-radius(1.5em);
+  }
   &:hover {
     color: #fff;
     background-color: $hoverBtnColor;

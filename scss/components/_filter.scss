@@ -2,7 +2,16 @@
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
+  @include respond-to('small') {
+    padding: 3rem 1.5rem;
+  }
+  @include respond-to('tablet') {
+    justify-content: flex-end;
+  }
   button {
     @extend %mainButton;
+    @include respond-to('tablet') {
+      margin-left: 3rem;
+    }
   }
 }

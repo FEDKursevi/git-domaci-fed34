@@ -1,11 +1,20 @@
 .pricing {
   text-align: center;
   padding: 4rem;
+  @include respond-to('small') {
+    padding: 5rem 0 7rem 0;
+  }
   h2 {
     color: $mainHeadingColor;
+    @include respond-to('small') {
+      font-size: 3rem;
+    }
   }
   p {
     margin: 3rem 0 2.5rem 0;
+    @include respond-to('small') {
+      margin: 5rem 0 4.5rem 0;
+    }
   }
   a {
     @extend %mainButton;

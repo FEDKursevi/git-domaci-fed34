@@ -1,17 +1,29 @@
 .houses {
   background-color: $hoverBgColor;
   padding: 4rem 0;
+  @include respond-to('small') {
+    padding: 7rem 0 4rem 0;
+  }
   .wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-items: center;
+    @include respond-to('small') {
+      grid-template-columns: repeat(auto-fill, minmax(530px, 1fr));
+    }
   }
   figure {
     position: relative;
     max-height: 220px;
     overflow: hidden;
     margin-bottom: 2rem;
+    @include respond-to('small') {
+      width: 530px;
+      max-height: 320px;
+      margin-bottom: 3rem;
+    }
     img {
+      width: 100%;
       &:hover + .houses__hoverDiv {
         display: block;
       }
@@ -35,5 +47,8 @@
   span {
     display: block;
     font-size: 1.8rem;
+    @include respond-to('small') {
+      font-size: 2.4rem;
+    }
   }
 }

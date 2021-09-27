@@ -2,9 +2,15 @@
   background-color: $hoverBgColor;
   text-align: center;
   padding: 4rem 0;
+  @include respond-to('small') {
+    padding: 4rem 0 6rem 0;
+  }
   h2 {
     color: $mainHeadingColor;
     margin-bottom: 4rem;
+    @include respond-to('small') {
+      font-size: 3rem;
+    }
   }
   form {
     background-color: $orange;
@@ -12,15 +18,34 @@
     flex-direction: column;
     padding: 2rem;
     margin-top: 2rem;
+    @include respond-to('small') {
+      margin-top: 3rem;
+      padding: 3rem;
+    }
     select,
     input,
     textarea {
       width: 100%;
       padding: 0.4rem;
+      border: none;
+      @include respond-to('small') {
+        padding: 0.8rem;
+      }
     }
     select,
     input {
       margin-bottom: 1.5rem;
+      @include respond-to('small') {
+        margin-bottom: 2.5rem;
+      }
     }
+  }
+}
+iframe {
+  width: 300px;
+  min-height: 250px;
+  @include respond-to('small') {
+    width: 80%;
+    min-height: 300px;
   }
 }
