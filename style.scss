@@ -12,6 +12,11 @@ main {
     color: $fontCol;
 }
 
+h2 {
+    color: $headerFooterCol;
+    font-weight: bold;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -109,6 +114,7 @@ ul {
                 width: 20%;
                 margin: 0 1.5%;
                 padding-bottom: 3%;
+                    
             }
             .lastPic {
                 height: 287px;
@@ -117,8 +123,47 @@ ul {
         }
         
     }
-  
-      
+
+
+.thirdPricing{
+    text-align: center;
+    p {
+        padding-bottom: 3%;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: auto;
+        .tableMains{ 
+            background: $navFirstCol;
+            color: white;
+            border: solid gray 1px;
+            font-weight: bold;
+            text-align: center;
+            padding: 1%;
+        }
+        .tableSeconds {
+            border: gray solid 1px;
+            background: $headerFooterCol;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 1%;
+        }
+        .tableThird {
+            border: gray solid 1px;
+            text-align: center;
+        }
+}
+}
+
+
+
+
+
+
+
 
   footer {
       margin: 0;
@@ -131,6 +176,3 @@ ul {
       }
   }
 
-  table, td{
-    border: 1px solid black
-  }
