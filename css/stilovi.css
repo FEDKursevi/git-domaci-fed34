@@ -140,5 +140,21 @@ body .apartments .slika .cena {
   top: 4em;
   left: 2em;
 }
+body .pricing {
+  text-align: center;
+}
+body .pricing h3 {
+  color: black;
+}
+body .pricing table {
+  margin: 0 auto;
+  border-collapse: separate;
+  empty-cells: hide;
+  border: 0;
+  border-spacing: 0;
+}
+body .pricing table th {
+  padding: 0;
+}
 
 /*# sourceMappingURL=stilovi.css.map */
