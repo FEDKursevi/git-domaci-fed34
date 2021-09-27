@@ -1,0 +1,39 @@
+.houses {
+  background-color: $hoverBgColor;
+  padding: 4rem 0;
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+  }
+  figure {
+    position: relative;
+    max-height: 220px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    img {
+      &:hover + .houses__hoverDiv {
+        display: block;
+      }
+    }
+  }
+}
+.houses__hoverDiv {
+  color: #000;
+  background-color: rgba(243, 247, 249, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 40%;
+  padding: 1.5rem 1rem;
+  // display: none;
+  text-align: left;
+  &:hover {
+    display: block;
+  }
+  span {
+    display: block;
+    font-size: 1.8rem;
+  }
+}

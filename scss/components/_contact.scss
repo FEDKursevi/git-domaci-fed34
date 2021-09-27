@@ -1,0 +1,26 @@
+.contact {
+  background-color: $hoverBgColor;
+  text-align: center;
+  padding: 4rem 0;
+  h2 {
+    color: $mainHeadingColor;
+    margin-bottom: 4rem;
+  }
+  form {
+    background-color: $orange;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 2rem;
+    select,
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.4rem;
+    }
+    select,
+    input {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

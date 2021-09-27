@@ -1,0 +1,83 @@
+// VARIABLES
+
+$mainFontColor: #797979;
+$mainHeadingColor: #374249;
+$hoverBtnColor: #cfd1d3;
+$hoverBgColor: #f3f7f9;
+$darkBlue: #374249;
+$orange: #f75311;
+$mainFont: 'Roboto', sans-serif;
+
+// BREAKPOINTS
+
+$breakpoints: (
+  'small': 767px,
+  'medium': 992px,
+  'large': 1200px,
+) !default;
+
+/// Mixin to manage responsive breakpoints
+/// @author Kitty Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+// BOX-SIZING
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+  -moz-box-sizing: $box-model; // Firefox <= 19
+  box-sizing: $box-model;
+}
+
+// BORDER RADIUS
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box; // stops bg color from leaking outside the border
+}
+
+// OPACITY
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// TRANSITION
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+%mainButton {
+  background: transparent;
+  border: 1px solid $hoverBtnColor;
+  padding: 0.5em 1em;
+  @include border-radius(15px);
+  color: $mainFontColor;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background-color: $hoverBtnColor;
+    @include transition(all 0.3s ease-out);
+  }
+}

@@ -1,0 +1,17 @@
+.pricing {
+  text-align: center;
+  padding: 4rem;
+  h2 {
+    color: $mainHeadingColor;
+  }
+  p {
+    margin: 3rem 0 2.5rem 0;
+  }
+  a {
+    @extend %mainButton;
+    text-decoration: none;
+  }
+}
+.pricing__table {
+  display: none;
+}

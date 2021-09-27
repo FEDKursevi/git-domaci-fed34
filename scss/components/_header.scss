@@ -1,0 +1,32 @@
+.location {
+  background-color: $orange;
+  padding: 1em;
+  a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 13%;
+  }
+}
+
+header {
+  nav {
+    ul {
+      background-color: $mainHeadingColor;
+      text-align: center;
+      padding: 2.5rem 0 0 0;
+      li {
+        padding-bottom: 2.5rem;
+        a {
+          color: #fff;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
