@@ -154,7 +154,19 @@ body .pricing table {
   border-spacing: 0;
 }
 body .pricing table th {
-  padding: 0;
+  color: white;
+  background-color: #374249;
+  padding: 0.5em 4em;
+  border: 1px solid #797979;
+}
+body .pricing table td {
+  padding: 0.5em 4em;
+  border: 1px solid #797979;
+}
+body .pricing table .location,
+body .pricing table .price {
+  background-color: #f75311;
+  color: white;
 }
 
 /*# sourceMappingURL=stilovi.css.map */

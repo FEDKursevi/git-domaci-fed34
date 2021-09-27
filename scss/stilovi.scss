@@ -156,8 +156,22 @@ body {
             border-spacing: 0;
 
             th {
-                padding: 0;
+                color: $white;
+                // font-weight: 700;
+                background-color: $back;
+                padding: 0.5em 4em;
+                border: 1px solid $texts;
+            }
 
+            td {
+                padding: 0.5em 4em;
+                border: 1px solid $texts;
+            }
+
+            .location,
+            .price {
+                background-color: $scream;
+                color: $white;
             }
         }
     }
