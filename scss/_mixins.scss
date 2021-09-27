@@ -1,0 +1,12 @@
+@mixin bodyMixin {
+
+*{
+  font-family: $fontf;
+  color: $texts;
+}
+
+body{
+  margin:0;
+  box-sizing: border-box;
+}
+}

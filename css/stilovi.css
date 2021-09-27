@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  color: #797979;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header .home {
+  background-color: #f75311;
+  float: left;
+  height: 4em;
+}
+header .home:hover p {
+  color: #cfd1d3;
+}
+header .home a {
+  color: white;
+}
+header .home a img {
+  width: 4em;
+  padding: 0 1em;
+}
+header .home a p {
+  margin: -45px 0 0 50px;
+  padding: 0 8em 0 2em;
+  color: white;
+}
+header nav {
+  background-color: #374249;
+}
+header nav ul {
+  margin: 0;
+  height: 4em;
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 1.3em;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0 1em;
+}
+header .container {
+  position: relative;
+  text-align: center;
+}
+header .container img {
+  width: 100%;
+}
+header .container .heads {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+header .container .heads h1,
+header .container .heads h2 {
+  color: white;
+  margin: 0;
+}
+header .container .heads h2 {
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=stilovi.css.map */

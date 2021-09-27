@@ -1,0 +1,85 @@
+// td {
+//   visibility: hidden;
+// }
+
+@import "vars";
+@import "mixins";
+
+@include bodyMixin;
+
+header {
+    .home {
+        background-color: $scream;
+        float: left;
+        height: 4em;
+
+        &:hover p {
+            color: $hover;
+        }
+
+        a {
+            color: $white;
+
+            img {
+                width: 4em;
+                padding: 0 1em;
+            }
+
+            p {
+                margin: -45px 0 0 50px;
+                padding: 0 8em 0 2em;
+                color: $white;
+            }
+        }
+    }
+
+    nav {
+        background-color: $back;
+
+        ul {
+            margin: 0;
+            height: 4em;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                padding: 1.3em;
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    padding: 0 1em;
+                }
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+
+        .heads {
+            position: absolute;
+            top: 66%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $white;
+
+            h1,
+            h2 {
+                color: $white;
+                margin: 0;
+            }
+
+            h2 {
+                font-size: 0.8em;
+
+            }
+        }
+
+    }
+}
