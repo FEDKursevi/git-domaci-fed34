@@ -1,220 +1,359 @@
-@import 'partials/mixins';
-@import 'partials/variables';
-
+@import "partials/mixins";
+@import "partials/variables";
 
 body {
-    font-family: $fontFam;
-    width: 100%;
-    margin: auto;
+  font-family: $fontFam;
+  width: 100%;
+  margin: auto;
 }
 
 main {
-    color: $fontCol;
+  color: $fontCol;
 }
 
 h2 {
-    color: $headerFooterCol;
-    font-weight: bold;
+  color: $headerFooterCol;
+  font-weight: bold;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: $headerFooterCol;
-    position: relative;
-  }
-  
-  li {
-    padding: 0% 3%;  
-    float: left;
-        img {
-            width: 3%;
-            position: absolute;
-            left: 1%;
-            top: 15%;
-        }
-        a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;  
-    }
-  }
-  .firstNav {
-      background-color: $navFirstCol;
-      width: 25%;
-      a{
-          text-align: inherit;
-          text-decoration: underline;
-      }
-  }
-        
-  .container {
-    position: relative;
-    text-align: center;
-    color: white;
-    img {
-        width: 100%;
-    }
-  }
-
-  .introTxt {
-    position: absolute;
-    top: 70%;
-    left: 25%;
-    background-color: darken($color: #5c5b5b98, $amount: 10);
-    padding: 0 10%;
-    h1 {
-        margin-bottom: 0%;
-        margin-top: 1%;
-    }
-    p {
-        margin-top: 0%;
-        margin-bottom: 1%;
-    }
-  }
-
-  .firstBtn{
-      position: relative;
-      div {
-          position: relative;
-          left: 50%;
-          margin: 2% 2%;
-          padding: 0.7% 2%;
-          display: inline-block;
-          border: rgb(212, 210, 210) solid 1px;
-          border-radius: 20px;
-          &:hover {
-                background-color: $btnHover;
-                a {
-                    color: white;
-                }
-             }
-          a {
-              text-decoration: none;
-              color: $fontCol;
-              }
-          }
-      }
-
-    .secondPic {
-        
-        padding-top: 3%;
-        width: 100%;
-        background-color: $bkgCol;
-        
-        .photosHouse {
-            width: 80%;
-            margin: auto;
-
-            img {
-                width: 20%;
-                margin: 0 1.5%;
-                padding-bottom: 3%;
-                    
-            }
-            .lastPic {
-                height: 287px;
-                object-fit: cover;
-            }
-        }
-        
-    }
-
-
-.thirdPricing{
-    text-align: center;
-    padding-bottom: 5%;
-    p {
-        padding-bottom: 3%;
-    }
-
-    table {
-        border-collapse: collapse;
-        width: 50%;
-        margin: auto;
-        .tableMains{ 
-            background: $navFirstCol;
-            color: white;
-            border: solid gray 1px;
-            font-weight: bold;
-            text-align: center;
-            padding: 1%;
-        }
-        .tableSeconds {
-            border: gray solid 1px;
-            background: $headerFooterCol;
-            color: white;
-            font-weight: bold;
-            text-align: center;
-            padding: 1%;
-        }
-        .tableThird {
-            border: gray solid 1px;
-            text-align: center;
-        }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $headerFooterCol;
+  position: relative;
 }
+
+li {
+  padding: 0% 3%;
+  float: left;
+  img {
+    width: 3%;
+    position: absolute;
+    left: 1%;
+    top: 15%;
+  }
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+}
+.firstNav {
+  background-color: $navFirstCol;
+  width: 25%;
+  a {
+    text-align: inherit;
+    text-decoration: underline;
+  }
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  img {
+    width: 100%;
+  }
+}
+
+.introTxt {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  background-color: darken($color: #5c5b5b98, $amount: 10);
+  padding: 0 10%;
+  h1 {
+    margin-bottom: 0%;
+    margin-top: 1%;
+  }
+  p {
+    margin-top: 0%;
+    margin-bottom: 1%;
+  }
+}
+
+.firstBtn {
+  position: relative;
+  div {
+    position: relative;
+    left: 50%;
+    margin: 2% 2%;
+    padding: 0.7% 2%;
+    display: inline-block;
+    border: rgb(212, 210, 210) solid 1px;
+    border-radius: 20px;
+    &:hover {
+      background-color: $btnHover;
+      a {
+        color: white;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $fontCol;
+    }
+  }
+}
+
+.secondPic {
+  padding-top: 3%;
+  width: 100%;
+  background-color: $bkgCol;
+
+  .photosHouse {
+    width: 80%;
+    margin: auto;
+
+    img {
+      width: 20%;
+      margin: 0 1.5%;
+      padding-bottom: 3%;
+    }
+    .lastPic {
+      height: 287px;
+      object-fit: cover;
+    }
+  }
+}
+
+.thirdPricing {
+  text-align: center;
+  padding-bottom: 5%;
+  p {
+    padding-bottom: 3%;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    .tableMains {
+      background: $navFirstCol;
+      @include tableMainSec;
+    }
+    .tableSeconds {
+      background: $headerFooterCol;
+      @include tableMainSec;
+    }
+    .tableThird {
+      border: gray solid 1px;
+      text-align: center;
+    }
+  }
+}
+.priceBtn {
+    display: none;
 }
 
 .fourthContact {
+  position: relative;
+  background: $bkgCol;
+  padding-top: 2%;
+  padding-bottom: 10%;
+  h2 {
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  .mapG {
+    display: inline-block;
+    left: 10%;
+    top: 31%;
+    position: absolute;
+  }
+  form {
+    display: inline-block;
+    background: $navFirstCol;
     position: relative;
-    background: $bkgCol;
-    padding-top: 2%;
-    padding-bottom: 10%;
-    h2{
-        text-align: center;
-        padding-bottom: 3%;
+    left: 42%;
+    top: 0;
+    width: 40%;
+    padding: 1.5%;
+
+    .title {
+      width: 20%;
     }
-    .mapG {
-        display: inline-block;
-        left: 10%;
-        top: 31%;
+    .name {
+      width: 70%;
+      position: relative;
+      left: 9.4%;
+    }
+    .email {
+      width: 100%;
+      margin-top: 3%;
+      margin-bottom: 3%;
+    }
+  }
+}
+
+footer {
+  margin: 0;
+  padding: 1% 0 0 0;
+  text-align: center;
+  background-color: $headerFooterCol;
+  color: white;
+  span {
+    color: $navFirstCol;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  ul {
+    display: grid;
+    width: 100%;
+    text-align: center;
+    .firstNav {
+      width: 100%;
+      text-align: left;
+      img {
+        width: 6%;
         position: absolute;
+        top: 5%;
+      }
     }
-    form {
+  }
+
+  .container {
+    img {
+      display: none;
+    }
+    .introTxt {
+      background: black;
+      display: block;
+      position: relative;
+      margin: 0%;
+      left: 0%;
+      h1 {
+        padding-top: 1%;
+        margin: 0%;
+      }
+      p {
+        padding-bottom: 3%;
+      }
+    }
+  }
+
+  section.firstBtn {
+    div {
+      left: 10%;
+    }
+  }
+  .secondPic {
+    .photosHouse {
+      width: 100%;
+      margin: auto;
+
+      img {
+        width: 100%;
+        padding-bottom: 3%;
+        object-fit: cover;
+        height: 500px;
+      }
+    }
+  }
+  .thirdPricing {
+    table {
+      display: none;
+    }
+    .priceBtn {
         display: inline-block;
-        background: $navFirstCol;
-        position: relative;
-        left: 42%;
-        top: 0;
-        width: 40%;
-        padding: 1.5%;
-
-        .title {
-            width: 20%;
-        }
-        .name {
-            width: 70%;
+        border: rgb(212, 210, 210) solid 1px;
+        border-radius: 20px;
+        padding: 2%;
+        text-decoration: none;
+        color: $fontCol;
+    }
+    }
+    .fourthContact {
+        .mapG {
             position: relative;
-            left: 9.4%;
         }
-        .email {
-            width: 100%;
-            margin-top: 3%;
-            margin-bottom: 3%;
+        form {
+            padding: 4%;
+            position: relative;
+            left: 7%;
+            top: 10px;
+            width: 75%;
+            .title {
+                width: 102.5%;
+            }
+            .name {
+                display: block;
+                margin: 2% 0 0 0;
+                width: 100%;
+                left: 0;
+            }
+            .txt {
+                width: 100.5%;
+            }
         }
-
     }
 }
 
+@media screen and (max-width: 770px) {
 
+        .container{
+            .introTxt{
+                left: 14%;
+            }
+        }
+        section.firstBtn {
+            div {
+              left: 15%;
+            }
+        }
+        
+        .secondPic {
+            .photosHouse {
+                width: 100%;
+                margin: 5% 3% 5% 10%;
+          
+                img {
+                    width: 35%;
+                    padding-bottom: 3%;
+                    object-fit: cover;
+                    height: 200px;
+                }
+                .lastPic {
+                    height: 200px;
+                }
+            }
+        }
 
+        .thirdPricing {
+            table {
+              width: 80%;
+            } 
+        } 
 
-
-
-
-
-  footer {
-      margin: 0;
-      padding: 1% 0 0 0;
-      text-align: center;
-      background-color: $headerFooterCol;
-      color: white;
-      span {
-          color: $navFirstCol;
-      }
-  }
-
+        .fourthContact {
+            .mapG {
+                position: relative;
+                left: 25%;
+                padding-bottom: 3%;
+            }
+            form {
+                padding: 4%;
+                position: relative;
+                left: 7%;
+                top: 10px;
+                width: 75%;
+                .title {
+                    width: 101.1%;
+                }
+                .name {
+                    display: block;
+                    margin: 2% 0 0 0;
+                    width: 100%;
+                    left: 0;
+                }
+                .txt {
+                    width: 100.5%;
+                }
+            }
+        }
+    }
+    
