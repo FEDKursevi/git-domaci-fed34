@@ -6,11 +6,21 @@
   @include respond-to('small') {
     padding: 0 1.5rem 4.5rem 1.5rem;
   }
+  @include respond-to('medium') {
+    margin: 0 auto;
+    max-width: calc(70% + 10px);
+    background-color: rgba(55, 66, 73, 0.5);
+    padding: 0;
+  }
   h1 {
     font-size: 4rem;
     font-weight: 400;
     @include respond-to('small') {
       font-size: 6rem;
+    }
+    @include respond-to('medium') {
+      width: 60%;
+      margin: 0 auto;
     }
   }
   h3 {
@@ -19,5 +29,16 @@
     @include respond-to('small') {
       font-size: 2.3rem;
     }
+  }
+}
+
+.hero {
+  @include respond-to('medium') {
+    background: url(../../slike/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
   }
 }

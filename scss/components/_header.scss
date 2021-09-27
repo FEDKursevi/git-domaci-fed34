@@ -1,24 +1,36 @@
 .location {
   background-color: $orange;
   padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   @include respond-to('small') {
     padding: 2rem 3rem;
   }
+  @include respond-to('medium') {
+    width: 23.5%;
+  }
   a {
     color: #fff;
-    display: flex;
-    align-items: center;
     @include respond-to('small') {
       font-size: 2.2rem;
     }
   }
   img {
-    width: 40px;
+    width: 45px;
   }
 }
 
 header {
+  @include respond-to('medium') {
+    display: flex;
+    justify-content: flex-start;
+  }
   nav {
+    @include respond-to('medium') {
+      width: 100%;
+      background-color: $mainHeadingColor;
+    }
     ul {
       background-color: $mainHeadingColor;
       text-align: center;
@@ -26,11 +38,21 @@ header {
       @include respond-to('small') {
         padding: 5rem 0 0 0;
       }
+      @include respond-to('medium') {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        width: 60%;
+      }
       li {
         padding-bottom: 2.5rem;
         list-style: none;
         @include respond-to('small') {
           padding-bottom: 4rem;
+        }
+        @include respond-to('medium') {
+          padding-bottom: 0;
         }
         a {
           color: #fff;

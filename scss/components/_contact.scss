@@ -22,6 +22,20 @@
       margin-top: 3rem;
       padding: 3rem;
     }
+    .form--flex {
+      @include respond-to('medium') {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        select {
+          width: 150px;
+        }
+        input {
+          width: 550px;
+        }
+      }
+    }
     select,
     input,
     textarea {
@@ -41,11 +55,20 @@
     }
   }
 }
+
 iframe {
   width: 300px;
   min-height: 250px;
   @include respond-to('small') {
     width: 80%;
     min-height: 300px;
+  }
+  @include respond-to('medium') {
+    width: 50%;
+  }
+}
+::placeholder {
+  @include respond-to('medium') {
+    font-size: 1.5rem;
   }
 }

@@ -19,8 +19,36 @@
   a {
     @extend %mainButton;
     text-decoration: none;
+    @include respond-to('medium') {
+      display: none;
+    }
   }
 }
 .pricing__table {
   display: none;
+  width: 100%;
+  min-height: 180px;
+  border-collapse: collapse;
+  td,
+  th {
+    border: 1px solid $mainFontColor;
+  }
+  th {
+    color: #fff;
+    background-color: $darkBlue;
+  }
+  .table--hidden {
+    visibility: hidden;
+    border: none;
+  }
+  .table--orange {
+    background-color: $orange;
+  }
+  .no-b {
+    border: none;
+  }
+  @include respond-to('medium') {
+    display: table;
+    margin: 0 auto;
+  }
 }

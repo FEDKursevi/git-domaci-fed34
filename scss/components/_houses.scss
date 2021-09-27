@@ -11,6 +11,9 @@
     @include respond-to('small') {
       grid-template-columns: repeat(auto-fill, minmax(530px, 1fr));
     }
+    @include respond-to('medium') {
+      grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    }
   }
   figure {
     position: relative;
@@ -21,6 +24,9 @@
       width: 530px;
       max-height: 320px;
       margin-bottom: 3rem;
+    }
+    @include respond-to('medium') {
+      width: 370px;
     }
     img {
       width: 100%;
@@ -41,6 +47,9 @@
   padding: 1.5rem 1rem;
   // display: none;
   text-align: left;
+  @include respond-to('medium') {
+    display: none;
+  }
   &:hover {
     display: block;
   }

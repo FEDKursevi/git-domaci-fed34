@@ -23,6 +23,9 @@ body {
 .wrapper {
   margin: 0 auto;
   max-width: calc(90% + 10px);
+  @include respond-to('medium') {
+    max-width: calc(70% + 10px);
+  }
 }
 img {
   max-width: 100%;
