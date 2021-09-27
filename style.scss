@@ -201,6 +201,9 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        display: relative;
+    }
   ul {
     display: grid;
     width: 100%;
@@ -216,20 +219,22 @@ footer {
     }
   }
 
+  
   .container {
     img {
       display: none;
-    }
-    .introTxt {
-      background: black;
-      display: block;
-      position: relative;
-      margin: 0%;
-      left: 0%;
-      h1 {
-        padding-top: 1%;
-        margin: 0%;
       }
+    .introTxt {
+        position: relative;
+        left: 0;
+        background: black;
+        display: block;
+        margin: 0%;
+       
+        h1 {
+            padding-top: 1%;
+            margin: 0%;
+    }
       p {
         padding-bottom: 3%;
       }
@@ -293,7 +298,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (min-width:501px) and (max-width: 770px) {
 
         .container{
             .introTxt{
