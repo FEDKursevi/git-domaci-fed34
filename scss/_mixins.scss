@@ -1,12 +1,31 @@
 @mixin bodyMixin {
 
-*{
-  font-family: $fontf;
-  color: $texts;
+    * {
+        font-family: $fontf;
+        color: $texts;
+    }
+
+    body {
+        margin: 0;
+        box-sizing: border-box;
+    }
 }
 
-body{
-  margin:0;
-  box-sizing: border-box;
-}
+@mixin ul_all {
+    ul {
+        margin: 0;
+        height: 4em;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            padding: 1.3em;
+
+            a {
+                text-decoration: none;
+                color: $white;
+                padding: 0 1em;
+            }
+        }
+    }
 }

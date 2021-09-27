@@ -26,32 +26,18 @@ header {
             }
 
             p {
-                margin: -45px 0 0 50px;
-                padding: 0 8em 0 2em;
+                margin: -50px 0 0 50px;
+                padding: 0 5em 0 2em;
                 color: $white;
+                font-size: 1.3em;
             }
         }
     }
 
     nav {
         background-color: $back;
+        @include ul_all;
 
-        ul {
-            margin: 0;
-            height: 4em;
-            list-style: none;
-
-            li {
-                display: inline-block;
-                padding: 1.3em;
-
-                a {
-                    text-decoration: none;
-                    color: $white;
-                    padding: 0 1em;
-                }
-            }
-        }
     }
 
     .container {
@@ -63,11 +49,13 @@ header {
         }
 
         .heads {
+            width: 66%;
             position: absolute;
             top: 66%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: $white;
+            background-color: rgba($color: #444, $alpha: 0.6);
 
             h1,
             h2 {
@@ -80,6 +68,33 @@ header {
 
             }
         }
+    }
+}
 
+body {
+    section:nth-child(odd) {
+        background-color: #f3f7f9;
+    }
+
+    section {
+        @include ul_all;
+
+        ul {
+            text-align: right;
+            padding: 1em 9em;
+
+            li {
+                &:hover a {
+                    border: 1px solid $scream;
+                }
+
+                a {
+                    color: $texts;
+                    border: 1px solid $hover;
+                    border-radius: 2em;
+                    padding: 1em 2em;
+                }
+            }
+        }
     }
 }
