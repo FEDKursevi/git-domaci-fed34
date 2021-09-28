@@ -238,6 +238,31 @@ footer p:nth-child(2) {
 }
 
 @media (max-width: 880px) {
+  header .home {
+    float: none;
+  }
+  header nav ul {
+    height: unset;
+    padding: 0;
+  }
+  header nav ul li {
+    display: block;
+    text-align: center;
+  }
+
+  body .container img {
+    display: none;
+  }
+  body .container .heads {
+    width: 100%;
+    position: static;
+    transform: translate(0%, 0%);
+    background-color: black;
+  }
+  body .container .heads h2 {
+    font-size: 1.2em;
+    padding: 0 0 1em 0;
+  }
   body .choice {
     padding: 1em 1em;
   }
