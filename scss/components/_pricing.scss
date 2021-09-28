@@ -51,4 +51,7 @@
     display: table;
     margin: 0 auto;
   }
+  @include respond-to('large') {
+    width: 60%;
+  }
 }

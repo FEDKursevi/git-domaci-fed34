@@ -14,6 +14,9 @@
     @include respond-to('medium') {
       grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
     }
+    @include respond-to('large') {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
   }
   figure {
     position: relative;
@@ -27,6 +30,10 @@
     }
     @include respond-to('medium') {
       width: 370px;
+    }
+    @include respond-to('large') {
+      width: 280px;
+      max-height: 340px;
     }
     img {
       width: 100%;

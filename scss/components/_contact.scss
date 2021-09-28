@@ -22,6 +22,10 @@
       margin-top: 3rem;
       padding: 3rem;
     }
+    @include respond-to('large') {
+      margin-top: 0;
+      width: 60%;
+    }
     .form--flex {
       @include respond-to('medium') {
         display: flex;
@@ -33,6 +37,11 @@
         }
         input {
           width: 550px;
+        }
+      }
+      @include respond-to('large') {
+        input {
+          width: 520px;
         }
       }
     }
@@ -66,9 +75,19 @@ iframe {
   @include respond-to('medium') {
     width: 50%;
   }
+  @include respond-to('large') {
+    width: 30%;
+  }
 }
 ::placeholder {
   @include respond-to('medium') {
     font-size: 1.5rem;
+  }
+}
+.contact--desktop {
+  @include respond-to('large') {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }

@@ -12,6 +12,9 @@
     background-color: rgba(55, 66, 73, 0.5);
     padding: 0;
   }
+  @include respond-to('large') {
+    width: 100%;
+  }
   h1 {
     font-size: 4rem;
     font-weight: 400;
@@ -21,6 +24,9 @@
     @include respond-to('medium') {
       width: 60%;
       margin: 0 auto;
+    }
+    @include respond-to('large') {
+      width: 100%;
     }
   }
   h3 {
@@ -40,5 +46,9 @@
     height: 90vh;
     display: flex;
     align-items: center;
+  }
+  @include respond-to('large') {
+    align-items: flex-end;
+    padding-bottom: 10rem;
   }
 }

@@ -45,6 +45,9 @@ header {
         padding: 3rem;
         width: 60%;
       }
+      @include respond-to('large') {
+        width: 40%;
+      }
       li {
         padding-bottom: 2.5rem;
         list-style: none;
