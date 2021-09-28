@@ -188,6 +188,21 @@ body {
                 border: 1px solid $scream;
             }
         }
+
+        .checkThePrices {
+            display: none;
+            border: 1px solid $hover;
+            border-radius: 2em;
+            padding: 1em 2em;
+            width: 10em;
+            margin: 0 auto;
+
+            &:hover {
+                color: white;
+                background-color: #cfd1d3;
+            }
+        }
+
     }
 
     .contactForm {
@@ -211,6 +226,7 @@ body {
             form {
                 display: inline-block;
                 width: 66%;
+                margin: 0 auto;
 
                 table {
                     border-spacing: 2em;
@@ -244,4 +260,70 @@ footer {
         color: $scream;
     }
 
+}
+
+@include mobile {
+    body {
+
+        .choice {
+            padding: 1em 1em;
+
+            ul {
+                text-align: center;
+                padding: 1em 0em;
+
+                li {
+                    padding: 1.3em 0;
+
+                    a {
+                        padding: 1em 1em;
+                    }
+                }
+            }
+        }
+
+        .middle {
+            margin: 0 auto;
+
+            .apartments {
+                width: 335px;
+
+                .slika {
+                    height: 220px;
+                    width: 305px;
+
+                    .naziv {
+                        width: 115px;
+                    }
+
+                    img {
+                        width: 306px;
+                    }
+
+                }
+            }
+        }
+
+
+        .pricing {
+            table {
+                display: none;
+            }
+
+            .checkThePrices {
+                display: block;
+            }
+        }
+
+        .contactForm {
+            .contact {
+                width: 95%;
+
+                form {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

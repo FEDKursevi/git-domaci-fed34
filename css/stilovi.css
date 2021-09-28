@@ -179,6 +179,18 @@ body .pricing table .price {
 body .pricing table .price {
   border: 1px solid #f75311;
 }
+body .pricing .checkThePrices {
+  display: none;
+  border: 1px solid #cfd1d3;
+  border-radius: 2em;
+  padding: 1em 2em;
+  width: 10em;
+  margin: 0 auto;
+}
+body .pricing .checkThePrices:hover {
+  color: white;
+  background-color: #cfd1d3;
+}
 body .contactForm {
   padding: 2em 0 4em 0;
 }
@@ -198,6 +210,7 @@ body .contactForm .contact h3 {
 body .contactForm .contact form {
   display: inline-block;
   width: 66%;
+  margin: 0 auto;
 }
 body .contactForm .contact form table {
   border-spacing: 2em;
@@ -222,6 +235,51 @@ footer p {
 }
 footer p:nth-child(2) {
   color: #f75311;
+}
+
+@media (max-width: 880px) {
+  body .choice {
+    padding: 1em 1em;
+  }
+  body .choice ul {
+    text-align: center;
+    padding: 1em 0em;
+  }
+  body .choice ul li {
+    padding: 1.3em 0;
+  }
+  body .choice ul li a {
+    padding: 1em 1em;
+  }
+  body .middle {
+    margin: 0 auto;
+  }
+  body .middle .apartments {
+    width: 335px;
+  }
+  body .middle .apartments .slika {
+    height: 220px;
+    width: 305px;
+  }
+  body .middle .apartments .slika .naziv {
+    width: 115px;
+  }
+  body .middle .apartments .slika img {
+    width: 306px;
+  }
+  body .pricing table {
+    display: none;
+  }
+  body .pricing .checkThePrices {
+    display: block;
+  }
+  body .contactForm .contact {
+    width: 95%;
+  }
+  body .contactForm .contact form {
+    display: block;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=stilovi.css.map */
