@@ -64,12 +64,15 @@ header .container .heads {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: rgba(68, 68, 68, 0.6);
+  background-color: rgba(55, 66, 73, 0.6);
 }
 header .container .heads h1,
 header .container .heads h2 {
   color: white;
   margin: 0;
+}
+header .container .heads h1 {
+  font-size: 3em;
 }
 header .container .heads h2 {
   font-size: 0.8em;
@@ -182,31 +185,43 @@ body .contactForm {
 body .contactForm .contact {
   width: 80%;
   text-align: center;
-  padding: 2em 0 6em 0;
   margin: 0 auto;
 }
 body .contactForm .contact img {
   display: inline-block;
+  width: 25%;
 }
 body .contactForm .contact h3 {
   color: black;
   font-size: 2em;
 }
-body .contactForm .contact table {
-  float: right;
+body .contactForm .contact form {
+  display: inline-block;
   width: 66%;
-  margin: 0 auto;
-  padding: 0;
+}
+body .contactForm .contact form table {
   border-spacing: 2em;
   background-color: #f75311;
 }
-body .contactForm .contact table input,
-body .contactForm .contact table select {
+body .contactForm .contact form table input,
+body .contactForm .contact form table select {
   height: 2em;
   width: 100%;
 }
-body .contactForm .contact table textarea {
+body .contactForm .contact form table textarea {
   width: 100%;
+}
+
+footer {
+  text-align: center;
+  background-color: #374249;
+}
+footer p {
+  display: inline-block;
+  color: white;
+}
+footer p:nth-child(2) {
+  color: #f75311;
 }
 
 /*# sourceMappingURL=stilovi.css.map */

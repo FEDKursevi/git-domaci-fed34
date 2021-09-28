@@ -59,7 +59,7 @@ header {
             left: 50%;
             transform: translate(-50%, -50%);
             color: $white;
-            background-color: rgba($color: #444, $alpha: 0.6);
+            background-color: rgba($color: $back, $alpha: 0.6);
 
             h1,
             h2 {
@@ -67,10 +67,14 @@ header {
                 margin: 0;
             }
 
+            h1 {
+                font-size: 3em;
+            }
+
             h2 {
                 font-size: 0.8em;
-
             }
+
         }
     }
 }
@@ -126,7 +130,7 @@ body {
 
             .naziv {
                 @extend %priceTag;
-                background-color: rgba($color: #fff, $alpha: 0.6);
+                background-color: rgba($color: $white, $alpha: 0.6);
                 top: 1em;
                 left: 1em;
                 padding: 1em 11em 6em 1em;
@@ -146,7 +150,7 @@ body {
         padding: 2em 0 6em 0;
 
         h3 {
-            color: black;
+            color: $black;
             font-size: 2em;
         }
 
@@ -192,38 +196,52 @@ body {
         .contact {
             width: 80%;
             text-align: center;
-            padding: 2em 0 6em 0;
             margin: 0 auto;
 
             img {
-                // float: left;
                 display: inline-block;
-                // text-align: left;
+                width: 25%;
             }
 
             h3 {
-                color: black;
+                color: $black;
                 font-size: 2em;
             }
 
-            table {
-                float: right;
+            form {
+                display: inline-block;
                 width: 66%;
-                margin: 0 auto;
-                padding: 0;
-                border-spacing: 2em;
-                background-color: $scream;
 
-                input,
-                select {
-                    height: 2em;
-                    width: 100%
-                }
+                table {
+                    border-spacing: 2em;
+                    background-color: $scream;
 
-                textarea {
-                    width: 100%;
+                    input,
+                    select {
+                        height: 2em;
+                        width: 100%
+                    }
+
+                    textarea {
+                        width: 100%;
+                    }
                 }
             }
         }
     }
+}
+
+footer {
+    text-align: center;
+    background-color: $back;
+
+    p {
+        display: inline-block;
+        color: $white;
+    }
+
+    p:nth-child(2) {
+        color: $scream;
+    }
+
 }
